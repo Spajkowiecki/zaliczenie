@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *
+    {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    body{
+        margin: 10px;
+    }
+
+    .control-panel_items
+    {
+        padding: 30px;
+        border: 1px solid black;
+        margin-bottom: 10px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .control-panel_items button 
+    {
+        padding: 5px;
+        height: 50px;
+        width: 150px;
+
+        border: 4px solid rgb(5, 86, 5);
+        background-color: rgb(13, 145, 13);
+        border-radius: 30px;
+
+        color: white;
+        font-weight: 900;
+        letter-spacing: 2px;
+        box-shadow: 3px 3px 5px black;
+    }
+    .control-panel_items button:hover 
+    {
+        border: 4px solid rgb(94, 225, 94);
+        background-color: rgb(41, 185, 41);
+        box-shadow: none;
+    }
+</style>
+<body>
+    <div class="control-panel">
+        <ul class="control-panel_items">
+            <li><button id="dlugosc">długość</button></li>
+            <li><button id="powierzchnia">powierzchnia</button></li>
+            <li><button id="objetosc">objętość</button></li>
+            <li><button id="waga">waga</button></li>
+            <li><button id="predkosc">prędkość</button></li>
+            <li><button id="temperatura">temperatura</button></li>
+            <li><button id="moc">moc</button></li>
+            <li><button id="energia">energia</button></li>
+            <li><button id="rownanie">równanie kwadratowe</button></li>
+            <li><button id="najwieksza">największa</button></li>
+        </ul>
+    </div>
+    <div id="down">
+
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>

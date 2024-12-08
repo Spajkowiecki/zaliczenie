@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przelicznikov</title>
+</head>
+<body>
+    <h1>Przelicznik VAT</h1>
+    <p>Podaj kwotę i wybierz, czy jest to netto czy brutto:</p>
+    <select id="typKwoty">
+        <option value="netto">Netto</option>
+        <option value="brutto">Brutto</option>
+    </select>
+    
+    <form id="form">
+        <input name="kwota" id="kwota" type="number" placeholder="Twoja kwota" required>
+        <input name="podatek" id="podatek" type="number" placeholder="Wartość podatku" required>
+        <button type="button" onclick="rozpocznij()">Rozpocznij obliczenia</button>
+    </form>
+
+    <div id="wynik">
+        Twój wynik: <span id="wynikText"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
